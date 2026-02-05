@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GpuSpecializationCapstone", "GpuSpecializationCapstone\GpuSpecializationCapstone.csproj", "{1B8A9C0D-F1D1-4842-BADD-9B936BC520CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GpuSpecializationCapstone.GUI", "GpuSpecializationCapstone.GUI\GpuSpecializationCapstone.GUI.csproj", "{6B6C10C1-FA85-4CC1-AAE4-699D851E54EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8A9C0D-F1D1-4842-BADD-9B936BC520CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8A9C0D-F1D1-4842-BADD-9B936BC520CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8A9C0D-F1D1-4842-BADD-9B936BC520CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8A9C0D-F1D1-4842-BADD-9B936BC520CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6C10C1-FA85-4CC1-AAE4-699D851E54EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6C10C1-FA85-4CC1-AAE4-699D851E54EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6C10C1-FA85-4CC1-AAE4-699D851E54EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6C10C1-FA85-4CC1-AAE4-699D851E54EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
