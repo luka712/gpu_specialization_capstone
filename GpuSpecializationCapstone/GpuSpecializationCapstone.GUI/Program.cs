@@ -30,7 +30,7 @@ Dictionary<int, OpenGlTexture> mipLevels = new();
 ImGuiController? controller = null;
 IInputContext? inputContext = null;
 
-MipMapGenerator generator = new();
+Downsampler generator = new();
 GL gl = null!;
 using var window = Window.Create(WindowOptions.Default);
 
@@ -87,7 +87,7 @@ Task OpenFileDialogAsync()
 }
 
 
-void MipMapSelectDropdown()
+void MipLevelsSelectDropdown()
 {
     if (mipLevels.Count == 0)
     {
@@ -96,7 +96,7 @@ void MipMapSelectDropdown()
 
     ImGui.PushItemWidth(200);
     // Preview dropdown.
-    if (ImGui.BeginCombo("MipMap Preview", "Level " + selectedLevel))
+    if (ImGui.BeginCombo("Mip Level Preview", "Level " + selectedLevel))
     {
         for (int level = 0; level < mipLevels.Count; level++)
         {
@@ -204,7 +204,7 @@ window.Render += delta =>
         _ = OpenFileDialogAsync();
     }
 
-    MipMapSelectDropdown();
+    MipLevelsSelectDropdown();
 
     ImGui.InputFloat("Texture Scale", ref textureScaleFactor);
 

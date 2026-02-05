@@ -5,7 +5,7 @@ using SkiaSharp;
 
 namespace GpuSpecializationCapstone;
 
-public class MipMapGenerator
+public class Downsampler
 {
     private readonly CL _cl;
     private readonly nint _context;
@@ -25,7 +25,7 @@ public class MipMapGenerator
     /// <summary>
     /// The constructor.
     /// </summary>
-    public MipMapGenerator()
+    public Downsampler()
     {
         _cl = CL.GetApi();
         _context = OpenCLContextUtilities.Create(_cl);
